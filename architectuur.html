@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectuur Fotografie - Fotoportfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Direct CDN links for Lightbox2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .category-header {
+            text-align: center;
+            padding: 4rem 2rem 2rem;
+            background-color: #e0fbfc;
+        }
+        
+        .category-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3d5a80;
+        }
+        
+        .category-header p {
+            font-size: 1.2rem;
+            color: #4a5568;
+        }
+        
+        .gallery-container {
+            padding: 2rem 5%;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="shape"></div>
+            <h1><a href="index.html">Fotoportfolio</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#about">Over mij</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="category-header">
+        <h2>Architectuur Fotografie</h2>
+        <p>Een verzameling van mijn architectuurfotografie</p>
+    </section>
+
+    <section class="gallery-container">
+        <div class="gallery-grid">
+            <!-- Hardcoded gallery items for testing -->
+            <div class="gallery-item">
+                <a href="assets/images/portfolio/architectuur/architectuur-1.jpg" data-lightbox="architectuur" data-title="Architectuur foto 1">
+                    <img src="assets/images/portfolio/architectuur/architectuur-1.jpg" alt="Architectuur foto 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/images/portfolio/architectuur/architectuur-2.jpg" data-lightbox="architectuur" data-title="Architectuur foto 2">
+                    <img src="assets/images/portfolio/architectuur/architectuur-2.jpg" alt="Architectuur foto 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="assets/images/portfolio/architectuur/architectuur-3.jpg" data-lightbox="architectuur" data-title="Architectuur foto 3">
+                    <img src="assets/images/portfolio/architectuur/architectuur-3.jpg" alt="Architectuur foto 3">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fotoportfolio - Alle rechten voorbehouden</p>
+    </footer>
+
+    <!-- Direct CDN links for jQuery and Lightbox2 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <script>
+        // Initialize Lightbox with options
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'albumLabel': "Afbeelding %1 van %2"
+        });
+    </script>
+</body>
+</html>
