@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoportfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="shape"></div>
+            <h1>Fotoportfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">Over mij</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welkom bij mijn fotoportfolio</h2>
+            <p>Een verzameling van mijn beste werk</p>
+        </div>
+        <div class="geometric-accent"></div>
+    </section>
+
+    <section id="portfolio" class="gallery">
+        <h2>Portfolio</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/600x400/?nature" alt="Natuur foto">
+                <div class="overlay">
+                    <span>Natuur</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/600x400/?portrait" alt="Portret foto">
+                <div class="overlay">
+                    <span>Portret</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/600x400/?architecture" alt="Architectuur foto">
+                <div class="overlay">
+                    <span>Architectuur</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/600x400/?street" alt="Straatfotografie">
+                <div class="overlay">
+                    <span>Straat</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/600x400/?abstract" alt="Abstracte foto">
+                <div class="overlay">
+                    <span>Abstract</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://source.unsplash.com/random/600x400/?travel" alt="Reisfoto">
+                <div class="overlay">
+                    <span>Reizen</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>Over mij</h2>
+            <p>Welkom bij mijn fotoportfolio. Ik ben een gepassioneerde fotograaf die gespecialiseerd is in diverse stijlen. Mijn doel is om bijzondere momenten vast te leggen en verhalen te vertellen door middel van beelden.</p>
+            <p>Dit is een eenvoudige testpagina om mijn werk te presenteren.</p>
+        </div>
+        <div class="profile-image">
+            <img src="profiel.jpg" alt="Profielfoto">
+        </div>
+        <div class="geometric-shape"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Interesse in mijn werk? Neem contact met me op.</p>
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Naam" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Bericht" required></textarea>
+            </div>
+            <button type="submit">Versturen</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Fotoportfolio - Alle rechten voorbehouden</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
